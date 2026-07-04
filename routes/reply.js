@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
           // Send a confirmation back to Sunny
           await axios.post(`${TELEGRAM_API}/sendMessage`, {
             chat_id: update.message.chat.id,
-            text: `✅ Email bhej diya ${sessionData?.visitor_name || 'visitor'} ko!`,
+            text: `✅ Email sent to ${sessionData?.visitor_name || 'visitor'}!`,
             reply_to_message_id: update.message.message_id
           });
         }
