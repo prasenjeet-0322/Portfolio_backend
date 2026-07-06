@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
 
     // Initialize the model
     const model = genAI.getGenerativeModel({ 
-      model: "gemini-2.5-flash",
+      model: "gemini-1.5-flash",
       systemInstruction: SYSTEM_PROMPT
     });
     
